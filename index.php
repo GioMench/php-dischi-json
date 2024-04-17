@@ -1,10 +1,4 @@
 <?php
-
-$json_string = file_get_contents('dischi.json');
-
-header('Content-type: application/json');
-
-var_dump($json_string);
 ?>
 <!doctype html>
 <html lang='en'>
@@ -21,7 +15,15 @@ var_dump($json_string);
 <body>
 
   <div id="app">
-    <h1>ciao</h1>
+    
+  <ul>
+    <li v-for="dis in dischi">
+      {{dis.title}}
+
+    </li>
+  </ul>
+
+
 
   </div>
 
