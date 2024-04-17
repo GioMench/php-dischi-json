@@ -1,7 +1,7 @@
 
 <?php
 
-$dischi = [
+/*$dischi = [
     [
         "title"=> "New Jersey",
         "author"=> "Bon Jovi",
@@ -45,7 +45,8 @@ $dischi = [
         "genre"=> "Rock"
     ]
     ];
-$json_string = json_encode($dischi);
+$json_string = json_encode($dischi);*/
+$json_string = file_get_contents('dischi.json');
 
 header('Content-type=> application/json');
 
