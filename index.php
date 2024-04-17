@@ -14,20 +14,28 @@
 
 <body>
 
-  <div id="app">
+  <div id="app" class="bg-dark">
 
-  
-    
-  <ul>
-    <li v-for="dis in dischi">
-      <img :src= "dis.poster" alt="">
-      <h3>{{dis.title}}</h3>
-      <h5>{{dis.author}}</h5>
-      <div>{{dis.year}}</div>
-      <div>{{dis.genre}}</div>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-4 g-4" v-for="dis in dischi">
+          <div class="card h-100"  >
+            <img class="card-img-top" :src="dis.poster" alt="Title" />
+            <div class="card-body">
+              <h3 class="card-title fw-bold">{{dis.title}}</h3>
+              <h5 class="card-text">{{dis.author}}</h5>
+              <div class="card-text">{{dis.year}}</div>
+              <div class="card-text text-secondary">{{dis.genre}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </li>
-  </ul>
+
+
+
+
 
 
 
