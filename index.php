@@ -15,10 +15,17 @@
 <body>
 
   <div id="app">
+
+  
     
   <ul>
     <li v-for="dis in dischi">
-      {{dis.title}}
+      <img :src= "dis.poster" alt="">
+      <div>{{dis.poster}}</div>
+      <h3>{{dis.title}}</h3>
+      <h5>{{dis.author}}</h5>
+      <div>{{dis.year}}</div>
+      <div>{{dis.genre}}</div>
 
     </li>
   </ul>
